@@ -8,7 +8,7 @@
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
         <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
         <element label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
-        <element label="LBU" mandatory="true" max_length="40" name="lbu" reference="x_229611_dxc_docs_local_business_unit" type="string"/>
+        <element label="LBU" mandatory="true" max_length="40" name="lbu" reference="x_229611_dxc_docs_local_business_unit" type="reference"/>
         <element label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
         <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
             <choice>
@@ -16,7 +16,7 @@
                 <element label="DXC Leader" sequence="1" value="Leader"/>
             </choice>
         </element>
-        <element label="Local Currency" mandatory="true" max_length="40" name="local_currency" reference="fx_currency" type="string"/>
+        <element label="Local Currency" mandatory="true" max_length="40" name="local_currency" type="currency"/>
         <element label="Next approver" mandatory="true" max_length="100" name="next_approver" type="string"/>
         <element display="true" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
         <element label="Please specify" mandatory="true" max_length="100" name="please_specify" type="string"/>
@@ -34,7 +34,7 @@
             </choice>
         </element>
         <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
-        <element label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="string"/>
-        <element label="Sub Category" mandatory="true" max_length="40" name="sub_category" reference="x_229611_dxc_docs_sub_category" type="string"/>
+        <element label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="reference"/>
+        <element label="Sub Category" mandatory="true" max_length="40" name="sub_category" reference="x_229611_dxc_docs_sub_category" type="reference"/>
     </element>
 </database>

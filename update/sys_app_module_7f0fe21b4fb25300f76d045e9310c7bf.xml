@@ -6,7 +6,9 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter/>
+        <filter table="x_229611_dxc_docs_approval_request">submitted_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="submitted_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint>List of My Request</hint>
         <homepage/>
         <image/>
@@ -19,14 +21,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_229611_dxc_docs.DXC Employee</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 06:23:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f0fe21b4fb25300f76d045e9310c7bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>List of My Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -34,7 +36,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_app_module_7f0fe21b4fb25300f76d045e9310c7bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 06:23:52</sys_updated_on>
+        <sys_updated_on>2018-06-25 08:42:27</sys_updated_on>
         <timeline_page/>
         <title>List of My Request</title>
         <uncancelable>false</uncancelable>
