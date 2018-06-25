@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="leader_agree" table="x_229611_dxc_docs_approval_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="dxc_title" table="x_229611_dxc_docs_approval_request">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -15,10 +15,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Leader agree</column_label>
+        <column_label>DXC Title</column_label>
         <comments/>
         <create_roles/>
-        <default_value>false</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -28,14 +28,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>leader_agree</element>
+        <element>dxc_title</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">boolean</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <max_length>300</max_length>
         <name>x_229611_dxc_docs_approval_request</name>
         <next_element/>
         <primary>false</primary>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-25 04:28:57</sys_created_on>
-        <sys_id>0b645a9b4f725300f76d045e9310c75f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Leader agree</sys_name>
+        <sys_created_on>2018-06-25 05:19:16</sys_created_on>
+        <sys_id>edafde9b4f725300f76d045e9310c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DXC Title</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
-        <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_leader_agree</sys_update_name>
+        <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_dxc_title</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 05:23:04</sys_updated_on>
+        <sys_updated_on>2018-06-25 05:19:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

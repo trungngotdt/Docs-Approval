@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="submission_date" label="Submission Date" language="en" table="x_229611_dxc_docs_approval_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>submission_date</element>
+            <help/>
+            <hint/>
+            <label>Submission Date</label>
+            <language>en</language>
+            <name>x_229611_dxc_docs_approval_request</name>
+            <plural>Submission Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-25 05:19:17</sys_created_on>
+            <sys_id>f580ae134fb25300f76d045e9310c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Submission Date</sys_name>
+            <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+            <sys_update_name>sys_documentation_x_229611_dxc_docs_approval_request_submission_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-25 05:19:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

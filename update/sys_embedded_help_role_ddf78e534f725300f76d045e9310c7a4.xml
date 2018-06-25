@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="x_229611_dxc_docs.approval_request_user" name="x_229611_dxc_docs.approval_request_user">51f78e534f725300f76d045e9310c7a3</role>
+        <role/>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 03:31:56</sys_created_on>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>Approval Request View Rules</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list) {
+
+	var checkRole=gs.hasRole("x_229611_dxc_docs.DXC Admin")||gs.hasRole("x_229611_dxc_docs.DXC PM")||gs.hasRole("x_229611_dxc_docs.DXC Leader");
+	gs.info("check "+checkRole);
+	if(checkRole)
+	{
+		answer="DXCApprovalView";
+	}
+	else if(gs.hasRole("x_229611_dxc_docs.DXC Employee"))
+	{
+		answer="DXCView";
+	}
+	else
+	{
+		return;
+	}
+})(view, is_list);]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-25 06:03:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>210a2a174fb25300f76d045e9310c7a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Approval Request View Rules</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sysrule_view_210a2a174fb25300f76d045e9310c7a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-25 06:10:27</sys_updated_on>
+        <table>x_229611_dxc_docs_approval_request</table>
+        <view/>
+    </sysrule_view>
+</record_update>

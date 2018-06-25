@@ -7,36 +7,36 @@
         <content_page/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>DXC Exchange Rates</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Local Business Units</mobile_title>
+        <mobile_title>DXC Exchange Rates</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_229611_dxc_docs_local_business_unit</name>
-        <order/>
+        <name>x_229611_dxc_docs_dxc_exchange_rate</name>
+        <order>680</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-25 03:30:50</sys_created_on>
+        <sys_created_on>2018-06-25 07:39:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9db78a534f725300f76d045e9310c7dd</sys_id>
+        <sys_id>867003174ff25300f76d045e9310c79a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Local Business Units</sys_name>
+        <sys_name>DXC Exchange Rates</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
-        <sys_update_name>sys_app_module_9db78a534f725300f76d045e9310c7dd</sys_update_name>
+        <sys_update_name>sys_app_module_867003174ff25300f76d045e9310c79a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 03:30:50</sys_updated_on>
+        <sys_updated_on>2018-06-25 07:39:24</sys_updated_on>
         <timeline_page/>
-        <title>Local Business Units</title>
+        <title>DXC Exchange Rates</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
