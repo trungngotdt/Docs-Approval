@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Sub Category">055c75db4f325300f76d045e9310c74c</application>
+        <application/>
         <filter/>
         <name>Sub Category</name>
         <order/>
