@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-25 02:41:07</sys_created_on>
+        <sys_id>c95c75db4f325300f76d045e9310c76f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_229611_dxc_docs_sub_category.x_229611_dxc_docs.sub_category_user</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_security_acl display_value="x_229611_dxc_docs_sub_category">c15c75db4f325300f76d045e9310c76d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c95c75db4f325300f76d045e9310c76f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-25 02:41:07</sys_updated_on>
+        <sys_user_role display_value="x_229611_dxc_docs.sub_category_user" name="x_229611_dxc_docs.sub_category_user">745c75db4f325300f76d045e9310c733</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
