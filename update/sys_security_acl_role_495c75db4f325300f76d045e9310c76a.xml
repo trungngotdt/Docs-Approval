@@ -14,7 +14,7 @@
         <sys_update_name>sys_security_acl_role_495c75db4f325300f76d045e9310c76a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-06-25 02:41:07</sys_updated_on>
-        <sys_user_role display_value="x_229611_dxc_docs.sub_category_user" name="x_229611_dxc_docs.sub_category_user">745c75db4f325300f76d045e9310c733</sys_user_role>
+        <sys_user_role display_value="x_229611_dxc_docs.DXC Admin" name="x_229611_dxc_docs.DXC Admin">745c75db4f325300f76d045e9310c733</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>
