@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="currency" label="Currency" language="en" table="x_229611_dxc_docs_dxc_exchange_rate">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>currency</element>
+            <help/>
+            <hint/>
+            <label>Currency</label>
+            <language>en</language>
+            <name>x_229611_dxc_docs_dxc_exchange_rate</name>
+            <plural>Currencies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-25 03:42:03</sys_created_on>
+            <sys_id>2d4acad34f725300f76d045e9310c7d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Currency</sys_name>
+            <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+            <sys_update_name>sys_documentation_x_229611_dxc_docs_dxc_exchange_rate_currency_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-25 03:42:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

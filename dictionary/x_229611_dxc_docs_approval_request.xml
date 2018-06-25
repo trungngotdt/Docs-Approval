@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Approval Request" max_length="40" name="x_229611_dxc_docs_approval_request" type="collection">
+        <element display="true" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+    </element>
+</database>

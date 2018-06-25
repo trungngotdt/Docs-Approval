@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="DXC Docs Approval">51b74e534f725300f76d045e9310c7e3</application>
+        <filter/>
+        <name>Local Business Units</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_229611_dxc_docs.local_business_unit_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-25 03:30:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5db74e534f725300f76d045e9310c7e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Local Business Units</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_ui_module_5db74e534f725300f76d045e9310c7e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-25 03:30:50</sys_updated_on>
+        <table>x_229611_dxc_docs_local_business_unit</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>
