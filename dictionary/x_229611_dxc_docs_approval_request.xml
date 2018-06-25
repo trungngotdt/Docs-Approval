@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Approval Request" max_length="40" name="x_229611_dxc_docs_approval_request" type="collection">
+        <element default="False" label="Approved with condition" max_length="40" name="approved_with_condition" type="string"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
+        <element label="Conditions" max_length="4000" name="conditions" type="journal"/>
+        <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
+        <element label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
+        <element label="LBU" mandatory="true" max_length="40" name="lbu" reference="x_229611_dxc_docs_local_business_unit" type="string"/>
+        <element default="False" label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
+        <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
+            <choice>
+                <element label="Leader &amp; PM"/>
+                <element label="DXC Leader" sequence="0" value="leader"/>
+            </choice>
+        </element>
+        <element label="Local Currency" mandatory="true" max_length="40" name="local_currency" reference="fx_currency" type="string"/>
         <element display="true" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element default="False" label="Reviewing" max_length="40" name="reviewing" type="boolean"/>
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" read_only="true" type="choice">
+            <choice/>
+        </element>
     </element>
 </database>
