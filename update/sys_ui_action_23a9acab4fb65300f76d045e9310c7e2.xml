@@ -22,7 +22,7 @@
         <list_style/>
         <name>Start Reviewing</name>
         <onclick>u_click()</onclick>
-        <order>100</order>
+        <order>150</order>
         <script><![CDATA[function u_click()
 {
 	g_form.setValue("reviewing",true);
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23a9acab4fb65300f76d045e9310c7e2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Start Reviewing</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -45,7 +45,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_23a9acab4fb65300f76d045e9310c7e2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 01:13:50</sys_updated_on>
+        <sys_updated_on>2018-06-26 03:13:20</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

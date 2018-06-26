@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_229611_dxc_docs_local_business_unit" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_229611_dxc_docs_local_business_unit" element="NULL" name="x_229611_dxc_docs_local_business_unit" parent="NULL" relationship="NULL" sys_domain="global" view="840d3162b92013006517ce7df7ee468d">91189bab4f3e5300f76d045e9310c7fc</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>DXC Employee</sys_created_by>
+            <sys_created_on>2018-06-26 04:00:29</sys_created_on>
+            <sys_id>59189bab4f3e5300f76d045e9310c7fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>DXC Employee</sys_updated_by>
+            <sys_updated_on>2018-06-26 04:00:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_229611_dxc_docs_local_business_unit</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>DXC Employee</sys_created_by>
+            <sys_created_on>2018-06-26 04:00:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91189bab4f3e5300f76d045e9310c7fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_229611_dxc_docs_local_business_unit</sys_name>
+            <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+            <sys_update_name>sys_ui_list_x_229611_dxc_docs_local_business_unit_sys_ref_list</sys_update_name>
+            <sys_updated_by>DXC Employee</sys_updated_by>
+            <sys_updated_on>2018-06-26 04:00:29</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">840d3162b92013006517ce7df7ee468d</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
