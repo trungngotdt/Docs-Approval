@@ -8,7 +8,7 @@
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
         <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
         <element label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
-        <element active="false" label="LBU" mandatory="true" max_length="40" name="lbu" read_only="true" reference="x_229611_dxc_docs_local_business_unit" type="reference"/>
+        <element label="LBU" mandatory="true" max_length="32" name="lbu" read_only="true" reference="x_229611_dxc_docs_local_business_unit" type="reference"/>
         <element label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
         <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
             <choice>
@@ -36,5 +36,8 @@
         <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Sub Category" mandatory="true" max_length="40" name="sub_category" reference="x_229611_dxc_docs_sub_category" type="reference"/>
+        <index name="index">
+            <element name="lbu"/>
+        </index>
     </element>
 </database>

@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments>Decline request</comments>
-        <condition>current.state=="WaitingLeader"</condition>
+        <condition>current.state.toString()==="WaitingLeader"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>true</form_context_menu>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05a4be234ffa5300f76d045e9310c7bf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Decline</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -45,7 +45,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_05a4be234ffa5300f76d045e9310c7bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 07:19:20</sys_updated_on>
+        <sys_updated_on>2018-06-27 12:52:54</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
