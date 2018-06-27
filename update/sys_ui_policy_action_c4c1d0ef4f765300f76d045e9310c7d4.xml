@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-06-25 13:34:40</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
-        <ui_policy display_value="Shown if request is at Approver queue. ">74fd446f4f765300f76d045e9310c74a</ui_policy>
+        <ui_policy display_value="[DeActive]Shown if request is at Approver queue. ">74fd446f4f765300f76d045e9310c74a</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

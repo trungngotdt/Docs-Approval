@@ -34,7 +34,7 @@
             </choice>
         </element>
         <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
-        <element label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Sub Category" mandatory="true" max_length="40" name="sub_category" reference="x_229611_dxc_docs_sub_category" type="reference"/>
     </element>
 </database>

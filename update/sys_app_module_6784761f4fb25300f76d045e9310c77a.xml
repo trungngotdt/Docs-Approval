@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6784761f4fb25300f76d045e9310c77a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>DXC Requests for Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -37,11 +37,11 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_app_module_6784761f4fb25300f76d045e9310c77a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 08:50:09</sys_updated_on>
+        <sys_updated_on>2018-06-27 02:48:04</sys_updated_on>
         <timeline_page/>
         <title>DXC Requests for Approval</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>DXCApprovalView</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sysrule_view">
     <sysrule_view action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <advanced>true</advanced>
         <condition/>
         <description/>
         <device_type>browser</device_type>
         <match_conditions>ALL</match_conditions>
-        <name>Approval Request View Rules</name>
+        <name>[DeActive]Approval Request View Rules</name>
         <order>100</order>
         <overrides_user_preference>true</overrides_user_preference>
         <script><![CDATA[(function overrideView(view, is_list) {
@@ -33,15 +33,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>210a2a174fb25300f76d045e9310c7a0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Approval Request View Rules</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>[DeActive]Approval Request View Rules</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sysrule_view_210a2a174fb25300f76d045e9310c7a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 06:10:27</sys_updated_on>
+        <sys_updated_on>2018-06-27 04:25:49</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <view/>
     </sysrule_view>
