@@ -3,6 +3,6 @@
     <element label="DXC Exchange Rate" max_length="40" name="x_229611_dxc_docs_dxc_exchange_rate" type="collection">
         <element display="true" label="Country" mandatory="true" max_length="40" name="country" type="string"/>
         <element label="Currency" mandatory="true" max_length="300" name="currency" reference="fx_currency" type="reference"/>
-        <element label="Rate" max_length="20" name="rate" type="decimal"/>
+        <element label="Rate" max_length="19" name="rate" type="decimal"/>
     </element>
 </database>
