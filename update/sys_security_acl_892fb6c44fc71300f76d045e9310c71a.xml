@@ -3,24 +3,36 @@
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>false</advanced>
+        <advanced>true</advanced>
         <condition/>
         <description>https://community.servicenow.com/community?id=community_question&amp;sys_id=fd734f25dbd8dbc01dcaf3231f961956</description>
         <name>x_229611_dxc_docs_approval_request.*</name>
         <operation display_value="write">write</operation>
-        <script/>
+        <script><![CDATA[var state=current.state.toString();
+var check=state==="Cancelled"||state==="Declined";
+gs.info("ACL : "+check);
+gs.info("Check 2:"+gs.hasRole("x_229611_dxc_docs.DXC Employee")&&check);
+if(gs.hasRole("x_229611_dxc_docs.DXC Employee")&&check)
+{
+	answer=false;
+}
+else
+{
+	answer=true;
+}
+]]></script>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-27 15:29:04</sys_created_on>
         <sys_id>892fb6c44fc71300f76d045e9310c71a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>x_229611_dxc_docs_approval_request.*</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_security_acl_892fb6c44fc71300f76d045e9310c71a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 15:33:16</sys_updated_on>
+        <sys_updated_on>2018-06-28 02:37:15</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

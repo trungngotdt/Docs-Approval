@@ -3,18 +3,18 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-27 15:32:24</sys_created_on>
-        <sys_id>61ff3a084fc71300f76d045e9310c70d</sys_id>
+        <sys_created_on>2018-06-28 02:05:47</sys_created_on>
+        <sys_id>30e059904f0f1300f76d045e9310c7e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_229611_dxc_docs_approval_request.*.x_58872_needit.ExampleRule</sys_name>
+        <sys_name>.x_229611_dxc_docs.DXC Employee</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
-        <sys_security_acl display_value="x_229611_dxc_docs_approval_request.*">892fb6c44fc71300f76d045e9310c71a</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_61ff3a084fc71300f76d045e9310c70d</sys_update_name>
+        <sys_security_acl display_value="x_229611_dxc_docs_approval_request.dxc_title">c8e01d904f0f1300f76d045e9310c700</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_30e059904f0f1300f76d045e9310c7e2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 15:32:24</sys_updated_on>
-        <sys_user_role display_value="x_58872_needit.ExampleRule" name="x_58872_needit.ExampleRule">1cee9e8c4f36d300f76d045e9310c724</sys_user_role>
+        <sys_updated_on>2018-06-28 02:05:47</sys_updated_on>
+        <sys_user_role display_value="x_229611_dxc_docs.DXC Employee" name="x_229611_dxc_docs.DXC Employee">e5520a9f4f325300f76d045e9310c700</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>
