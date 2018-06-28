@@ -7,7 +7,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -29,13 +29,16 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-/*
+
+	
 	var checkUser=current.submitted_by!=gs.getUserID();
-	if(gs.hasRole("x_229611_dxc_docs.DXC Employee")&&checkUser)
+	var checkAuthor=!(gs.hasRole("x_229611_dxc_docs.DXC Employee")&&checkUser);
+	if(checkAuthor==false)
 	{
-		
+		gs.addErrorMessage("UnAuthor");
+		current.setAbortAction(true);
 	}
-*/	
+	
 	// Add your code here
 
 })(current, previous);]]></script>
@@ -45,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af96a0404f831300f76d045e9310c791</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>DXC_AllDXCRequests_DenyAction</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -53,7 +56,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_af96a0404f831300f76d045e9310c791</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 04:42:24</sys_updated_on>
+        <sys_updated_on>2018-06-28 02:56:11</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

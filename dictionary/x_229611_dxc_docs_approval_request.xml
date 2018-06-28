@@ -16,7 +16,7 @@
                 <element label="DXC Leader" sequence="1" value="Leader"/>
             </choice>
         </element>
-        <element label="Local Currency" mandatory="true" max_length="15" name="local_currency" type="currency"/>
+        <element label="Local Currency" mandatory="true" max_length="32" name="local_currency" reference="fx_currency" type="reference"/>
         <element label="Next approver" mandatory="true" max_length="100" name="next_approver" type="string"/>
         <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element label="Please specify" mandatory="true" max_length="100" name="please_specify" type="string"/>
@@ -37,6 +37,9 @@
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="40" name="submitted_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Sub Category" mandatory="true" max_length="40" name="sub_category" reference="x_229611_dxc_docs_sub_category" type="reference"/>
         <index name="index">
+            <element name="local_currency"/>
+        </index>
+        <index name="index2">
             <element name="lbu"/>
         </index>
     </element>

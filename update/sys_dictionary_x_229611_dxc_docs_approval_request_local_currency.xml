@@ -33,15 +33,15 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Currency">currency</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>true</mandatory>
-        <max_length>15</max_length>
+        <max_length>32</max_length>
         <name>x_229611_dxc_docs_approval_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="fx_currency">fx_currency</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-25 04:25:23</sys_created_on>
-        <sys_id>cdb3529b4f725300f76d045e9310c703</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2018-06-28 04:07:12</sys_created_on>
+        <sys_id>002c21544f4f1300f76d045e9310c717</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Local Currency</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_local_currency</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-26 02:37:29</sys_updated_on>
+        <sys_updated_on>2018-06-28 04:07:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

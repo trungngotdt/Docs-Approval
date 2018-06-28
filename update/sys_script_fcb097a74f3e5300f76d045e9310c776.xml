@@ -46,7 +46,8 @@
 	lbuTable.next();
 	g_scratchpad.getget=lbuTable.name;
 	current.setValue("lbu",lbuTable.sys_id);
-	gs.info("info lbu"+current.lbu);
+	current.setValue("local_currency",current.lbu.default_currency.sys_id);
+	gs.info("info lbu"+current.lbu+" local "+current.lbu.default_currency+"pre local "+current.local_currency);
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -54,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcb097a74f3e5300f76d045e9310c776</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>DXC_CreateANewRequest_setvalueLBU</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -62,7 +63,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_fcb097a74f3e5300f76d045e9310c776</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 13:53:52</sys_updated_on>
+        <sys_updated_on>2018-06-28 04:01:41</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
