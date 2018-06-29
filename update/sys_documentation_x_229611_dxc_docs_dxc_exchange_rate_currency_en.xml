@@ -11,8 +11,8 @@
             <plural>Currencies</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 03:42:03</sys_created_on>
-            <sys_id>2d4acad34f725300f76d045e9310c7d4</sys_id>
+            <sys_created_on>2018-06-29 03:05:55</sys_created_on>
+            <sys_id>ef5866604f0b5300f76d045e9310c792</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Currency</sys_name>
             <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -20,7 +20,7 @@
             <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
             <sys_update_name>sys_documentation_x_229611_dxc_docs_dxc_exchange_rate_currency_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 03:42:03</sys_updated_on>
+            <sys_updated_on>2018-06-29 03:05:55</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

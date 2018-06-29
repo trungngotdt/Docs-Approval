@@ -32,12 +32,23 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
+	var namecountry=current.submitted_by.location.country;
+	gs.info("Dot walk : "+namecountry+" Number "+current.number);
+	
+	var lbuquery=new GlideRecord("x_229611_dxc_docs_local_business_unit");
+	
+	lbuquery.addQuery("country.name",namecountry);
+	
+	lbuquery.query();
+	lbuquery.next();
+	gs.info("Name of lbu : "+lbuquery.name+" Number "+current.number);
 	// Add your code here
-//g_scratchpad.getget=gs.getUser().getCompanyID();
+	//g_scratchpad.getget=gs.getUser().getCompanyID();
+	/*
 	var gRecord=new GlideRecord("core_company");
 	gRecord.addQuery("sys_id",gs.getUser().getCompanyID());
 	gRecord.query();
-	gs.info("DotWalk : "+gs.getUser().getCompanyID().name);
+	
 	var nameOfCompany=gRecord.next()?gRecord.name:"";
 	g_scratchpad.getget=nameOfCompany;
 	var lbuTable=new GlideRecord("x_229611_dxc_docs_local_business_unit");
@@ -46,13 +57,14 @@
 	g_scratchpad.get0=nameOfCompany;
 	lbuTable.next();
 	g_scratchpad.getget=lbuTable.name;
-	current.setValue("lbu",lbuTable.sys_id);
+	*/
+	current.setValue("lbu",lbuquery.sys_id);
 	current.setValue("local_currency",current.lbu.default_currency.sys_id);
 	var lcurrency=new GlideRecord("x_229611_dxc_docs_dxc_exchange_rate");
 	lcurrency.addQuery("currency",current.local_currency);
 	lcurrency.query();
 	current.setValue("exchange_rate",lcurrency.next()?lcurrency.rate:0);
-	gs.info("info lbu"+current.lbu+" local "+current.lbu.default_currency+"pre local "+current.local_currency);
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -60,7 +72,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcb097a74f3e5300f76d045e9310c776</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>DXC_CreateANewRequest_setvalueLBU</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -68,7 +80,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_fcb097a74f3e5300f76d045e9310c776</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-28 06:16:42</sys_updated_on>
+        <sys_updated_on>2018-06-29 04:22:14</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

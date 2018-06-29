@@ -2,30 +2,44 @@
 <record_update>
     <sys_ui_section caption="New Section" section_id="630f56c04f871300f76d045e9310c737" sys_domain="global" table="x_229611_dxc_docs_approval_request" version="3" view="DXCView">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>dxc_title</element>
+            <element>submission_date</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-27 13:43:29</sys_created_on>
-            <sys_id>87176e084f871300f76d045e9310c760</sys_id>
+            <sys_created_on>2018-06-28 08:42:15</sys_created_on>
+            <sys_id>10cba6d84fcf1300f76d045e9310c740</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-27 13:43:29</sys_updated_on>
+            <sys_updated_on>2018-06-28 08:42:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>submitted_by</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-28 08:42:15</sys_created_on>
+            <sys_id>90cba6d84fcf1300f76d045e9310c740</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-28 08:42:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-27 13:43:29</sys_created_on>
-            <sys_id>0b176e084f871300f76d045e9310c760</sys_id>
+            <sys_created_on>2018-06-28 08:42:15</sys_created_on>
+            <sys_id>14cba6d84fcf1300f76d045e9310c740</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-27 13:43:29</sys_updated_on>
+            <sys_updated_on>2018-06-28 08:42:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

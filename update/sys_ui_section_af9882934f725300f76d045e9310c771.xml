@@ -3,43 +3,57 @@
     <sys_ui_section caption="" section_id="af9882934f725300f76d045e9310c771" sys_domain="global" table="x_229611_dxc_docs_dxc_exchange_rate" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>country</element>
-            <position>1</position>
+            <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 03:40:23</sys_created_on>
-            <sys_id>05e906d34f725300f76d045e9310c71b</sys_id>
+            <sys_created_on>2018-06-29 03:02:03</sys_created_on>
+            <sys_id>3a776a204f0b5300f76d045e9310c788</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_dxc_exchange_rate" sys_domain="global" view="Default view">af9882934f725300f76d045e9310c771</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 03:40:23</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>currency</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 03:42:03</sys_created_on>
-            <sys_id>e94a4ad34f725300f76d045e9310c71d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_dxc_exchange_rate" sys_domain="global" view="Default view">af9882934f725300f76d045e9310c771</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 03:42:03</sys_updated_on>
+            <sys_updated_on>2018-06-29 03:02:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>rate</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 03:42:03</sys_created_on>
-            <sys_id>a94acad34f725300f76d045e9310c7d0</sys_id>
+            <sys_created_on>2018-06-29 03:02:03</sys_created_on>
+            <sys_id>be776a204f0b5300f76d045e9310c788</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_dxc_exchange_rate" sys_domain="global" view="Default view">af9882934f725300f76d045e9310c771</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 03:42:03</sys_updated_on>
+            <sys_updated_on>2018-06-29 03:02:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-29 03:02:03</sys_created_on>
+            <sys_id>32776a204f0b5300f76d045e9310c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_dxc_exchange_rate" sys_domain="global" view="Default view">af9882934f725300f76d045e9310c771</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-29 03:02:03</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>currency</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-29 03:02:03</sys_created_on>
+            <sys_id>b2776a204f0b5300f76d045e9310c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_dxc_exchange_rate" sys_domain="global" view="Default view">af9882934f725300f76d045e9310c771</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-29 03:02:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -2,30 +2,44 @@
 <record_update>
     <sys_ui_section caption="" section_id="59c72a574fb25300f76d045e9310c758" sys_domain="global" table="x_229611_dxc_docs_approval_request" version="3" view="DXCApprovalView">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>approved_with_condition</element>
+            <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 05:50:56</sys_created_on>
-            <sys_id>59c72a574fb25300f76d045e9310c75a</sys_id>
+            <sys_created_on>2018-06-28 08:48:48</sys_created_on>
+            <sys_id>104deed84fcf1300f76d045e9310c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">182b22984fcf1300f76d045e9310c7da</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">59c72a574fb25300f76d045e9310c758</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-28 08:48:48</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approved_with_condition</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-28 08:48:48</sys_created_on>
+            <sys_id>944deed84fcf1300f76d045e9310c7ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">59c72a574fb25300f76d045e9310c758</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 05:50:56</sys_updated_on>
+            <sys_updated_on>2018-06-28 08:48:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>conditions</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-25 05:50:56</sys_created_on>
-            <sys_id>ddc72a574fb25300f76d045e9310c75a</sys_id>
+            <sys_created_on>2018-06-28 08:48:48</sys_created_on>
+            <sys_id>184deed84fcf1300f76d045e9310c7ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">59c72a574fb25300f76d045e9310c758</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-25 05:50:56</sys_updated_on>
+            <sys_updated_on>2018-06-28 08:48:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
