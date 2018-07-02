@@ -7,7 +7,7 @@
         <description>Who next approval can be one of these values depending which level of approval is selected and which current status the request is:&#13;
 DXC Leader or PM.&#13;
 </description>
-        <field>level_of_approval</field>
+        <field>leader_agree</field>
         <global>true</global>
         <messages/>
         <name>WhoNextApproval</name>
@@ -15,16 +15,18 @@ DXC Leader or PM.&#13;
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    if (isLoading || newValue === '') {
       return;
-   }
-
-	if(newValue.toString()==="LeaderPM")
+   }	
+	var isCheck=g_form.getBooleanValue("leader_agree");	
+	if(!isCheck)
+	{		
+		g_form.setValue("next_approver","DXC Leader");
+	}
+	else
 	{
 		g_form.setValue("next_approver","PM");
 	}
-	else if(newValue.toString()==="LeaderPM")
-	{
-		g_form.setValue("next_approver","DXC Leader");
-	}
+	console.log("next approver "+g_form.getValue("next_approver"));
+	
    //Type appropriate comment here, and begin script below
    
 }]]></script>
@@ -34,7 +36,7 @@ DXC Leader or PM.&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e84cf59c4f4f1300f76d045e9310c77f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>WhoNextApproval</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -42,7 +44,7 @@ DXC Leader or PM.&#13;
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_e84cf59c4f4f1300f76d045e9310c77f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-28 05:20:10</sys_updated_on>
+        <sys_updated_on>2018-07-02 05:15:40</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
