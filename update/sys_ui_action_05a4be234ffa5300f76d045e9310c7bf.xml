@@ -31,6 +31,20 @@
 }*/
 
 current.setValue("state","Declined");
+var currentRec = current.sys_id;
+	
+	gs.info("In 1 "+currentRec);
+	var gr = new GlideRecord('sysapproval_approver');
+	gr.addQuery('document_id',currentRec);		
+	gr.addQuery('state', 'requested');		
+	gr.query();	
+	while (gr.next()) {
+		
+		gs.info("sys_id "+gr.sys_id);
+		gs.info("state "+gr.state);
+		gr.state = 'rejected';		
+		gr.update();		
+	}	
 current.update();
 if (! current.isActionAborted())
 	action.setRedirectURL(current);]]></script>
@@ -44,7 +58,7 @@ if (! current.isActionAborted())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05a4be234ffa5300f76d045e9310c7bf</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Decline</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -52,7 +66,7 @@ if (! current.isActionAborted())
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_05a4be234ffa5300f76d045e9310c7bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-29 04:57:57</sys_updated_on>
+        <sys_updated_on>2018-07-02 07:33:07</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
