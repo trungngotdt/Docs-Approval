@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_229611_dxc_docs_approval_request">state=Declined^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="Declined"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Reject</label>
+        <name>DXC Docs Approval - Reject state</name>
+        <order>300</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-02 07:45:23</sys_created_on>
+        <sys_id>52e48ba94f0b1300f76d045e9310c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DXC Docs Approval - Reject state</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_process_flow_52e48ba94f0b1300f76d045e9310c798</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-02 07:45:23</sys_updated_on>
+        <table>x_229611_dxc_docs_approval_request</table>
+    </sys_process_flow>
+</record_update>
