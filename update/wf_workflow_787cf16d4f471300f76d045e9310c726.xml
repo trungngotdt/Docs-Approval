@@ -32,12 +32,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-02 08:50:04</sys_created_on>
         <sys_id>06e317e14f4b1300f76d045e9310c72b</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-03 02:06:26</sys_updated_on>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_updated_by>DXC Employee</sys_updated_by>
+        <sys_updated_on>2018-07-03 04:56:23</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="DXC_WorkFlow_Approval">787cf16d4f471300f76d045e9310c726</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
