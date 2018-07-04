@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-04 05:18:23</sys_created_on>
+        <sys_id>6056b01e4f4f1300f76d045e9310c79a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_229611_dxc_docs_approval_request.conditions.x_229611_dxc_docs.DXC PM</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_security_acl display_value="x_229611_dxc_docs_approval_request.conditions">8ea9549a4f0f1300f76d045e9310c7ec</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6056b01e4f4f1300f76d045e9310c79a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-04 05:18:23</sys_updated_on>
+        <sys_user_role display_value="x_229611_dxc_docs.DXC PM" name="x_229611_dxc_docs.DXC PM">d3f342df4f325300f76d045e9310c732</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_security_acl">
     <sys_security_acl action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>false</advanced>
+        <advanced>true</advanced>
         <condition/>
-        <description>Allow write for comments in x_229611_dxc_docs_approval_request, for users with role x_229611_dxc_docs.DXC Leader.</description>
+        <description>Allow write for comments in x_229611_dxc_docs_approval_request, for users with roles (x_229611_dxc_docs.DXC Leader, x_229611_dxc_docs.DXC Admin, x_229611_dxc_docs.DXC PM, x_229611_dxc_docs.DXC Employee), and if the ACL script returns true.</description>
         <name>x_229611_dxc_docs_approval_request.comments</name>
         <operation display_value="write">write</operation>
-        <script/>
+        <script><![CDATA[var state= current.state.toString();
+var IsOwn=gs.getUserID()==current.submitted_by;
+gs.info("Value IsOwn : "+IsOwn);
+if(gs.hasRole("x_229611_dxc_docs.DXC Admin"))
+{
+	gs.info("ACL1");
+	answer = true;
+}
+else if(gs.hasRole("x_229611_dxc_docs.DXC Leader")&&state==="WaitingLeader")
+{
+	gs.info("ACL2");
+	answer = true;
+}
+else if(gs.hasRole("x_229611_dxc_docs.DXC PM")&&state==="WaitingPMApprover")
+{
+	gs.info("ACL3");
+	answer=true;
+}
+else if(gs.hasRole("x_229611_dxc_docs.DXC Employee")&&IsOwn)
+{
+	if(state==="Declined"||state==="Cancelled")
+	{
+		answer=false;
+	}
+	else
+	{
+		answer=true;
+	}
+	
+}
+else
+{
+	gs.info("ACL5");
+	answer=false;
+}
+gs.info("ACLOut");]]></script>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-27 15:29:36</sys_created_on>
         <sys_id>905f3a084fc71300f76d045e9310c71c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>x_229611_dxc_docs_approval_request.comments</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_security_acl_905f3a084fc71300f76d045e9310c71c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-03 04:05:00</sys_updated_on>
+        <sys_updated_on>2018-07-04 05:10:21</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

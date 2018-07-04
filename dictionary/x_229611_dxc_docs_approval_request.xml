@@ -7,7 +7,7 @@
         <element label="DXC Title" mandatory="true" max_length="300" name="dxc_title" type="string"/>
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
         <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
-        <element label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
+        <element default="0" label="GBP" mandatory="true" max_length="20" name="gbp" read_only="true" type="decimal"/>
         <element label="LBU" mandatory="true" max_length="32" name="lbu" read_only="true" reference="x_229611_dxc_docs_local_business_unit" type="reference"/>
         <element label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
         <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
@@ -17,7 +17,7 @@
             </choice>
         </element>
         <element label="Local Currency" mandatory="true" max_length="32" name="local_currency" reference="fx_currency" type="reference"/>
-        <element label="Next approver" mandatory="true" max_length="100" name="next_approver" type="string"/>
+        <element label="Next approver" mandatory="true" max_length="100" name="next_approver" read_only="true" type="string"/>
         <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element label="Please specify" max_length="100" name="please_specify" type="string"/>
         <element label="Reviewing" max_length="40" name="reviewing" type="boolean"/>
