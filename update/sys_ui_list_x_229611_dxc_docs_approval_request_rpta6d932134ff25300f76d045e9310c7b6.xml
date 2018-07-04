@@ -4,17 +4,377 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">44ebba2b4ffa5300f76d045e9310c7b9</list_id>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 01:57:14</sys_created_on>
-            <sys_id>0cebba2b4ffa5300f76d045e9310c7b9</sys_id>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a8f1919e4f8f1300f76d045e9310c7c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 01:57:14</sys_updated_on>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approved_with_condition</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>2cf1919e4f8f1300f76d045e9310c7c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comments</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>acf1919e4f8f1300f76d045e9310c7c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>conditions</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>20f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a0f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>24f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dxc_title</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a4f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dxc_web_link</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>28f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>exchange_rate</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a8f1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>gbp</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>2cf1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lbu</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>acf1919e4f8f1300f76d045e9310c7c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leader_agree</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>20f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>level_of_approval</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a0f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>local_currency</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>24f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>next_approver</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a4f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>please_specify</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>28f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reviewing</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a8f1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>2cf1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sub_category</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>acf1919e4f8f1300f76d045e9310c7c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>submission_date</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>20f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>submitted_by</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a0f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_tags</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>24f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a4f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>23</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>28f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_mod_count</element>
+            <list_id display_value="x_229611_dxc_docs_approval_request" element="NULL" name="x_229611_dxc_docs_approval_request" parent="NULL" relationship="NULL" sys_domain="global" view="b2d9f6134ff25300f76d045e9310c7af">24f1919e4f8f1300f76d045e9310c7c0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>24</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
+            <sys_id>a8f1919e4f8f1300f76d045e9310c7c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -28,10 +388,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-26 01:57:14</sys_created_on>
+            <sys_created_on>2018-07-04 07:17:43</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>44ebba2b4ffa5300f76d045e9310c7b9</sys_id>
+            <sys_id>24f1919e4f8f1300f76d045e9310c7c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_229611_dxc_docs_approval_request</sys_name>
             <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -39,7 +399,7 @@
             <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
             <sys_update_name>sys_ui_list_x_229611_dxc_docs_approval_request_RPTa6d932134ff25300f76d045e9310c7b6</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-26 01:57:14</sys_updated_on>
+            <sys_updated_on>2018-07-04 07:17:43</sys_updated_on>
             <sys_user/>
             <view display_value="Rpta6d932134ff25300f76d045e9310c7b6" name="RPTa6d932134ff25300f76d045e9310c7b6">b2d9f6134ff25300f76d045e9310c7af</view>
             <view_name/>
