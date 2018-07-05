@@ -6,8 +6,8 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_229611_dxc_docs_approval_request">state=Draft^ORstate=New^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="Draft"/>
-            <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="New"/>
+        <filter table="x_229611_dxc_docs_approval_request">state!=Draft^ORstate!=New^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="Draft"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="true" value="New"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint>All DXC Requests</hint>
@@ -20,7 +20,7 @@
         <name>x_229611_dxc_docs_approval_request</name>
         <order>450</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>sys_DATE=10</query>
         <report/>
         <roles>x_229611_dxc_docs.DXC Employee,x_229611_dxc_docs.DXC PM,x_229611_dxc_docs.DXC Admin,x_229611_dxc_docs.DXC Leader</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ab15325f4fb25300f76d045e9310c755</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>All DXC Requests</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_app_module_ab15325f4fb25300f76d045e9310c755</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-27 02:41:17</sys_updated_on>
+        <sys_updated_on>2018-07-05 03:22:38</sys_updated_on>
         <timeline_page/>
         <title>All DXC Requests</title>
         <uncancelable>false</uncancelable>

@@ -3,24 +3,24 @@
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>true</advanced>
+        <advanced>false</advanced>
         <condition/>
-        <description>Allow read for records in x_229611_dxc_docs_approval_request, for users with role x_229611_dxc_docs.DXC Employee.</description>
-        <name>x_229611_dxc_docs_approval_request</name>
-        <operation display_value="read">read</operation>
+        <description/>
+        <name>x_229611_dxc_docs_approval_request.reviewing</name>
+        <operation display_value="write">write</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-28 02:11:25</sys_created_on>
-        <sys_id>aa321dd04f0f1300f76d045e9310c75c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>x_229611_dxc_docs_approval_request</sys_name>
+        <sys_created_on>2018-07-05 05:42:35</sys_created_on>
+        <sys_id>c69586a64f4b5300f76d045e9310c771</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_229611_dxc_docs_approval_request.reviewing</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
-        <sys_update_name>sys_security_acl_aa321dd04f0f1300f76d045e9310c75c</sys_update_name>
+        <sys_update_name>sys_security_acl_c69586a64f4b5300f76d045e9310c771</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-05 03:09:25</sys_updated_on>
+        <sys_updated_on>2018-07-05 05:42:35</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
