@@ -23,7 +23,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -55,14 +55,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 03:40:23</sys_created_on>
         <sys_id>9fa946d34f725300f76d045e9310c75a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Country</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_dictionary_x_229611_dxc_docs_dxc_exchange_rate_country</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-25 03:43:09</sys_updated_on>
+        <sys_updated_on>2018-07-05 06:21:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

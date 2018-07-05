@@ -40,7 +40,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,approved_with_condition,comments,conditions,sys_created_on,sys_created_by,dxc_title,dxc_web_link,exchange_rate,gbp,lbu,leader_agree,level_of_approval,local_currency,next_approver,please_specify,reviewing,state,sub_category,submission_date,submitted_by,sys_tags,sys_updated_on,sys_updated_by,sys_mod_count</field_list>
-        <filter/>
+        <filter table="x_229611_dxc_docs_approval_request">state!=Draft^submission_dateONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()<item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="Draft"/>
+            <item endquery="false" field="submission_date" goto="false" newquery="false" operator="ON" or="false" value="This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -67,7 +69,7 @@
         <page_hdrftr display_value="Default">0ecdb03fc3613000cef73b251eba8f5e</page_hdrftr>
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
-        <report_source display_value="ApprovalRequest.State this Month (Approval Request)">d101955e4f8f1300f76d045e9310c7b7</report_source>
+        <report_source/>
         <roles/>
         <row>approved_with_condition</row>
         <sc_groupby_item_id/>
@@ -95,14 +97,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 07:15:29</sys_created_on>
         <sys_id>c02b72534ff25300f76d045e9310c70b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>DXC - Report request in month</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_report_c02b72534ff25300f76d045e9310c70b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-04 07:16:39</sys_updated_on>
+        <sys_updated_on>2018-07-05 07:03:01</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <title>DXC - Report request in month</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
