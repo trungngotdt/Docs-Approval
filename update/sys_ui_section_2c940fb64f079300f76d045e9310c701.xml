@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="2c940fb64f079300f76d045e9310c701" sys_domain="global" table="x_229611_dxc_docs_approval_request" version="3" view="DXCApprovalView">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>59b44fb64f079300f76d045e9310c7b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">182b22984fcf1300f76d045e9310c7da</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dxc_title</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>ddb44fb64f079300f76d045e9310c7b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>51b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d1b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>55b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lbu</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d5b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sub_category</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>59b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>level_of_approval</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d9b44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>leader_agree</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>5db44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>ddb44fb64f079300f76d045e9310c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>submitted_by</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>51b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dxc_web_link</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d1b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>exchange_rate</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>55b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>local_currency</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d5b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gbp</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>59b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>next_approver</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
+            <sys_id>d9b44fb64f079300f76d045e9310c7bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">2c940fb64f079300f76d045e9310c701</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_229611_dxc_docs_approval_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 04:55:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c940fb64f079300f76d045e9310c701</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_229611_dxc_docs_approval_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+            <sys_update_name>sys_ui_section_2c940fb64f079300f76d045e9310c701</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 04:55:30</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="DXCApprovalView" name="DXCApprovalView">19c72a574fb25300f76d045e9310c755</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
