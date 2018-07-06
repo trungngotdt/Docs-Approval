@@ -5,13 +5,13 @@
             <element>submitted_by</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 14:26:58</sys_created_on>
-            <sys_id>42cdb36a4f4f5300f76d045e9310c7f5</sys_id>
+            <sys_created_on>2018-07-06 03:25:47</sys_created_on>
+            <sys_id>a600be7a4fc39300f76d045e9310c7d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 14:26:58</sys_updated_on>
+            <sys_updated_on>2018-07-06 03:25:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,15 +19,29 @@
             <element>comments</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 14:26:58</sys_created_on>
-            <sys_id>c6cdb36a4f4f5300f76d045e9310c7f5</sys_id>
+            <sys_created_on>2018-07-06 03:25:47</sys_created_on>
+            <sys_id>2a00be7a4fc39300f76d045e9310c7d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 14:26:58</sys_updated_on>
+            <sys_updated_on>2018-07-06 03:25:47</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-06 03:25:47</sys_created_on>
+            <sys_id>aa00be7a4fc39300f76d045e9310c7d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="5161e6534fb25300f76d045e9310c72f">630f56c04f871300f76d045e9310c737</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-06 03:25:47</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Comments</caption>
