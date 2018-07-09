@@ -20,7 +20,7 @@
         <element label="Next approver" mandatory="true" max_length="100" name="next_approver" read_only="true" type="string"/>
         <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element label="Please specify" max_length="100" name="please_specify" type="string"/>
-        <element label="Reviewing" max_length="40" name="reviewing" type="boolean"/>
+        <element label="Reviewing" max_length="40" name="reviewing" read_only="true" type="boolean"/>
         <element choice="1" default="Draft" label="State" mandatory="true" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Approved" value="Approved"/>
