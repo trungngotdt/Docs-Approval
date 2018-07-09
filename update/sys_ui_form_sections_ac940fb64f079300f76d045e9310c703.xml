@@ -25,21 +25,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_229611_dxc_docs_approval_request" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">ac940fb64f079300f76d045e9310c703</sys_ui_form>
-            <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-06 04:55:30</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-06 04:55:30</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>24940fb64f079300f76d045e9310c70a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_229611_dxc_docs_approval_request" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">ac940fb64f079300f76d045e9310c703</sys_ui_form>
-            <sys_ui_section caption="Conditions" display_value="Conditions" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">60940fb64f079300f76d045e9310c703</sys_ui_section>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-07-06 04:55:30</sys_updated_on>
         </sys_ui_form_section>

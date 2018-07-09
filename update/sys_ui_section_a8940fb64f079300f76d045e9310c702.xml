@@ -1,36 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_ui_section caption="Comments" section_id="a8940fb64f079300f76d045e9310c702" sys_domain="global" table="x_229611_dxc_docs_approval_request" version="3" view="DXCApprovalView">
+    <sys_ui_section caption="Additional Information" section_id="a8940fb64f079300f76d045e9310c702" sys_domain="global" table="x_229611_dxc_docs_approval_request" version="3" view="DXCApprovalView">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comments</element>
+            <element>approved_with_condition</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
-            <sys_id>a9b44fb64f079300f76d045e9310c7c3</sys_id>
+            <sys_created_on>2018-07-09 06:59:27</sys_created_on>
+            <sys_id>39bd3efb4fc71300f76d045e9310c719</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_updated_on>2018-07-09 06:59:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conditions</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-09 06:59:27</sys_created_on>
+            <sys_id>fdbd3efb4fc71300f76d045e9310c719</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-09 06:59:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-09 06:59:27</sys_created_on>
+            <sys_id>71bd3efb4fc71300f76d045e9310c71a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-09 06:59:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>
-            <position>1</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-06 04:56:06</sys_created_on>
-            <sys_id>2db44fb64f079300f76d045e9310c7c3</sys_id>
+            <sys_created_on>2018-07-09 06:59:27</sys_created_on>
+            <sys_id>f1bd3efb4fc71300f76d045e9310c71a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
-            <sys_ui_section caption="Comments" display_value="Comments" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
+            <sys_ui_section caption="Additional Information" display_value="Additional Information" name="x_229611_dxc_docs_approval_request" sys_domain="global" view="19c72a574fb25300f76d045e9310c755">a8940fb64f079300f76d045e9310c702</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-06 04:56:06</sys_updated_on>
+            <sys_updated_on>2018-07-09 06:59:27</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Comments</caption>
+            <caption>Additional Information</caption>
             <header>false</header>
             <name>x_229611_dxc_docs_approval_request</name>
             <roles/>
@@ -40,15 +68,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a8940fb64f079300f76d045e9310c702</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Comments</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Additional Information</sys_name>
             <sys_overrides/>
             <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
             <sys_policy/>
             <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
             <sys_update_name>sys_ui_section_a8940fb64f079300f76d045e9310c702</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-06 04:55:30</sys_updated_on>
+            <sys_updated_on>2018-07-09 06:59:27</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="DXCApprovalView" name="DXCApprovalView">19c72a574fb25300f76d045e9310c755</view>

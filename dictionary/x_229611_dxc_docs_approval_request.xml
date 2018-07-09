@@ -2,7 +2,7 @@
 <database>
     <element audit="true" label="Approval Request" max_length="40" name="x_229611_dxc_docs_approval_request" type="collection">
         <element label="Approved with condition" max_length="40" name="approved_with_condition" type="boolean"/>
-        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
         <element label="Conditions" mandatory="true" max_length="4000" name="conditions" type="journal"/>
         <element label="DXC Title" mandatory="true" max_length="300" name="dxc_title" type="string"/>
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
