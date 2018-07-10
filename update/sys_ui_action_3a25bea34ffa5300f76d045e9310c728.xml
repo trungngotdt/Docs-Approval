@@ -4,7 +4,7 @@
         <action_name>Approve</action_name>
         <active>true</active>
         <client>false</client>
-        <comments>Approved if level of approver is PM.</comments>
+        <comments>Approved if level of approver is PM or DXC Leader.</comments>
         <condition>(gs.hasRole("x_229611_dxc_docs.DXC Leader")&amp;&amp;current.state.toString()==="WaitingLeader")||(gs.hasRole("x_229611_dxc_docs.DXC PM")&amp;&amp; current.state.toString()==="WaitingPMApprover")</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -43,18 +43,30 @@
 // }
 
 	var currentRec = current.sys_id;
+	var grJournalList=new GlideRecord("sys_journal_field");
+	grJournalList.addQuery("element_id",currentRec);
+	grJournalList.addQuery("element","conditions");
+	grJournalList.addQuery("sys_created_by",gs.getUserName());
+	grJournalList.query();
+	if(grJournalList.next())
+	{
+		current.setValue("state","ApprovedWCondition");		
+	}
+	else
+	{
+		gs.info("In 1 "+currentRec);
+		var gr = new GlideRecord('sysapproval_approver');	
+		gr.addQuery('document_id',currentRec);		
+		gr.addQuery('state', 'requested');		
+		gr.query();	
+		while (gr.next()) {		
+			gs.info("sys_id "+gr.sys_id);
+			gs.info("state "+gr.state);
+			gr.state = 'approved';		
+			gr.update();	
+		}
+	}
 	
-	gs.info("In 1 "+currentRec);
-	var gr = new GlideRecord('sysapproval_approver');
-	gr.addQuery('document_id',currentRec);		
-	gr.addQuery('state', 'requested');		
-	gr.query();	
-	while (gr.next()) {		
-		gs.info("sys_id "+gr.sys_id);
-		gs.info("state "+gr.state);
-		gr.state = 'approved';		
-		gr.update();	
-}
 action.setRedirectURL(current);
 current.update();
 if (! current.isActionAborted())
@@ -70,7 +82,7 @@ if (! current.isActionAborted())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a25bea34ffa5300f76d045e9310c728</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -78,7 +90,7 @@ if (! current.isActionAborted())
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_3a25bea34ffa5300f76d045e9310c728</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-05 08:30:20</sys_updated_on>
+        <sys_updated_on>2018-07-10 06:29:29</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
