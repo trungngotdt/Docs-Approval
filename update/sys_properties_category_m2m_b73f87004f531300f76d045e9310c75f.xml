@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="DXC_Property_Category">857d47cc4f131300f76d045e9310c79a</category>
+        <order>100</order>
+        <property display_value="x_229611_dxc_docs.DXC_ApprovalRequest_" name="x_229611_dxc_docs.DXC_ApprovalRequest_">c5fd4bcc4f131300f76d045e9310c7df</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-10 02:54:31</sys_created_on>
+        <sys_id>b73f87004f531300f76d045e9310c75f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_229611_dxc_docs.DXC_ApprovalRequest_.DXC_Property_Category</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_b73f87004f531300f76d045e9310c75f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-10 02:54:31</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
