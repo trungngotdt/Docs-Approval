@@ -11,7 +11,13 @@
         <script><![CDATA[var state= current.state.toString();
 var IsOwn=gs.getUserID()==current.submitted_by;
 gs.info("Value IsOwn : "+IsOwn);
-if(gs.hasRole("x_229611_dxc_docs.DXC Admin"))
+var checkIsApprovalWithConditions=((current.next_approver=="DXC Leader"&&gs.hasRole("x_229611_dxc_docs.DXC Leader"))||(current.next_approver=="PM"&&gs.hasRole("x_229611_dxc_docs.DXC PM")))&&current.state.toString()==="ApprovedWCondition";
+
+if(checkIsApprovalWithConditions)
+{
+	answer=true;
+}
+else if(gs.hasRole("x_229611_dxc_docs.DXC Admin"))
 {
 	gs.info("ACL1");
 	answer = true;
@@ -48,14 +54,14 @@ gs.info("ACLOut");]]></script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-27 15:29:36</sys_created_on>
         <sys_id>905f3a084fc71300f76d045e9310c71c</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>x_229611_dxc_docs_approval_request.comments</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_security_acl_905f3a084fc71300f76d045e9310c71c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-04 05:10:21</sys_updated_on>
+        <sys_updated_on>2018-07-10 07:07:53</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
