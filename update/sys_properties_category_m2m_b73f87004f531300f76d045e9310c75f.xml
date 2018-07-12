@@ -3,7 +3,7 @@
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="DXC_Property_Category">857d47cc4f131300f76d045e9310c79a</category>
         <order>100</order>
-        <property display_value="x_229611_dxc_docs.DXC_ApprovalRequest_" name="x_229611_dxc_docs.DXC_ApprovalRequest_">c5fd4bcc4f131300f76d045e9310c7df</property>
+        <property display_value="x_229611_dxc_docs.DXC_ApprovalRequest_Rate" name="x_229611_dxc_docs.DXC_ApprovalRequest_Rate">c5fd4bcc4f131300f76d045e9310c7df</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-10 02:54:31</sys_created_on>

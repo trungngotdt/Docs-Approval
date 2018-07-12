@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>service-catalog</category>
+        <content><![CDATA[ <h1 class="title topictitle1">My Request Filter</h1>  <div class="body conbody">  <p class="p">Service catalog allows you to define the <span class="ph uicontrol">My Request Filter</span>. Use this to   define the filter that is relevant to your organization. Once the filter is created, the    <span class="ph uicontrol">My Requests</span> module under the Self-Service application is automatically   updated to use the filter defined by you. </p> </div>]]></content>
+        <last_sync>2018-07-12 02:16:11</last_sync>
+        <modifier>normal</modifier>
+        <name>request_filter_list-normal</name>
+        <page>request_filter_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-12 02:16:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eda991bc4f131300f76d045e9310c71a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>request_filter_list-normal</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_embedded_help_content_eda991bc4f131300f76d045e9310c71a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-12 02:16:11</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=eda991bc4f131300f76d045e9310c71a"/>
+</record_update>
