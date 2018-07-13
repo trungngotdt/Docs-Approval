@@ -8,8 +8,8 @@
         <condition>(!current.reviewing)&amp;&amp; current.state.toString()==="WaitingLeader"&amp;&amp;current.submitted_by==gs.getUserID()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
-        <form_context_menu>true</form_context_menu>
-        <form_link>true</form_link>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
         <form_style/>
         <hint/>
         <list_action>false</list_action>
@@ -52,7 +52,7 @@ if (! current.isActionAborted())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>455560ab4fb65300f76d045e9310c711</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Recall</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -60,7 +60,7 @@ if (! current.isActionAborted())
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_455560ab4fb65300f76d045e9310c711</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-09 02:00:51</sys_updated_on>
+        <sys_updated_on>2018-07-13 02:37:08</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
