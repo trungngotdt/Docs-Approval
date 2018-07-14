@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>DXC_CreateANewRequest_setvalueLBU&amp;GBP</name>
+        <name>DXC_CreateANewRequest_SetValueLBU&amp;GBP</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -44,11 +44,12 @@
 	current.setValue("lbu",lbuquery.sys_id);
 	current.setValue("local_currency",current.lbu.default_currency.sys_id);
 	
-	var lcurrency=new GlideRecord("x_229611_dxc_docs_dxc_exchange_rate");
+	var lcurrency=new GlideRecord("fx_rate");
 	lcurrency.addQuery("currency",current.local_currency);
 	lcurrency.query();
 	
 	current.setValue("exchange_rate",lcurrency.next()?lcurrency.rate:0);
+	//gs.info(current.);
 	current.setValue("gbp",current.exchange_rate*parseFloat(rate.toString()));
 	
 })(current, previous);]]></script>
@@ -58,15 +59,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcb097a74f3e5300f76d045e9310c776</sys_id>
-        <sys_mod_count>42</sys_mod_count>
-        <sys_name>DXC_CreateANewRequest_setvalueLBU&amp;GBP</sys_name>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>DXC_CreateANewRequest_SetValueLBU&amp;GBP</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_fcb097a74f3e5300f76d045e9310c776</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 01:23:34</sys_updated_on>
+        <sys_updated_on>2018-07-14 15:00:09</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

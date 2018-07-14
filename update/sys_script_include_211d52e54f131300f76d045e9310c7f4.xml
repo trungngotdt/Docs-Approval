@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetRecord</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DXC_CreateNewDXCRequest_GetRecord</name>
+        <script><![CDATA[var DXC_CreateNewDXCRequest_GetRecord = Class.create();
+DXC_CreateNewDXCRequest_GetRecord.prototype = {
+	initialize :function(){},
+    GetFirstRecord: function(nameOfRecord,column,value) {
+		var gr=new GlideRecord(nameOfRecord);
+		for(i=0;i<column.length;i++)
+		{
+			gr.addQuery(column[i],value[i]);
+		}
+		gr.setLimit(1);
+		gr.query();
+		return gr.next()?gr:null;
+    },
+
+	 GetAllRecord: function(nameOfRecord,column,value) {
+		var gr=new GlideRecord(nameOfRecord);
+		for(i=0;i<column.length;i++)
+		{
+			gr.addQuery(column[i],value[i]);
+		}
+		gr.next();
+		answer=[];
+		while(gr.next())
+		{
+			answer.push(gr);
+		}
+		return gr;
+    },
+    type: 'DXC_CreateNewDXCRequest_GetRecord'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-14 15:18:00</sys_created_on>
+        <sys_id>211d52e54f131300f76d045e9310c7f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>DXC_CreateNewDXCRequest_GetRecord</sys_name>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_script_include_211d52e54f131300f76d045e9310c7f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-14 15:59:21</sys_updated_on>
+    </sys_script_include>
+</record_update>
