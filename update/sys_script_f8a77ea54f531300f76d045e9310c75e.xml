@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>DXC_CreateNewDXCRequest_GetProperty</name>
+        <name>DXC_CreateNewDXCRequest_CheckURL</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,15 +30,25 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	var httpclient = Packages.org.apache.commons.httpclient;
-	var HttpClient = httpclient.HttpClient;
-	var GetMethod = httpclient.methods.GetMethod;
-	var get = new GetMethod( "https://tuoitre.vn/");
-	var client = new HttpClient();
-	var status = client.executeMethod(get);
-	var result = (status+ "\n" );
-	gs.print(result);
-	get.releaseConnection();
+	var request= new sn_ws.RESTMessageV2();
+		request.setEndpoint("https://www.w3schools.com/");
+		request.setHttpTimeout(60);
+		request.setHttpMethod("get");
+		var response = request.executeAsync();
+		response.haveError();
+		
+		var status = response.getStatusCode();
+	gs.info("status :"+status+typeof status);
+	if(status==200)
+	{
+		gs.info(status);
+		current.setAbortAction(true);
+	}
+	else
+	{
+		gs.info("status check:"+status==200);
+	}
+	
 	// Add your code here
 	
 })(current, previous);]]></script>
@@ -48,15 +58,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f8a77ea54f531300f76d045e9310c75e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>DXC_CreateNewDXCRequest_GetProperty</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>DXC_CreateNewDXCRequest_CheckURL</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_f8a77ea54f531300f76d045e9310c75e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-14 17:06:36</sys_updated_on>
+        <sys_updated_on>2018-07-15 07:03:37</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
