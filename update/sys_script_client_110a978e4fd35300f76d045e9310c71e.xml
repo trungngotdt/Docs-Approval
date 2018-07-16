@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>approved_with_condition</field>
+        <global>true</global>
+        <messages/>
+        <name>DisableAttachments</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var check=g_form.getValue("state").toString()==="Draft"||g_form.getValue("state").toString()==="New";
+   //Type appropriate comment here, and begin script below
+   if(!check)
+	{
+		g_form.disableAttachments();
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-16 08:52:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>110a978e4fd35300f76d045e9310c71e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DisableAttachments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
+        <sys_update_name>sys_script_client_110a978e4fd35300f76d045e9310c71e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:53:32</sys_updated_on>
+        <table>x_229611_dxc_docs_approval_request</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
