@@ -38,7 +38,7 @@
 		var check=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_CheckURL();
 		var status= check.IsURLExists(current.dxc_web_link);
 		gs.info("Status :"+status);
-		if(status>300)
+		if(!status)
 		{
 			gs.addErrorMessage("Check attachments or URL");
 			current.setAbortAction(true);
@@ -54,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af96a0404f831300f76d045e9310c791</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>DXC_CreateNewDXCRequest_ValidateData</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_af96a0404f831300f76d045e9310c791</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-16 07:04:21</sys_updated_on>
+        <sys_updated_on>2018-07-16 14:19:02</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
