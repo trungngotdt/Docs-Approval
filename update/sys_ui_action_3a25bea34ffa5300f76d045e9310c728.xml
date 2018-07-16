@@ -23,52 +23,39 @@
         <name>Approve</name>
         <onclick>u_click()</onclick>
         <order>700</order>
-        <script><![CDATA[// if(gs.hasRole("x_229611_dxc_docs.DXC Leader"))
-// {
-// 	var level=current.level_of_approval.toString();
-// 	if(level==="Leader")
-// 	{
-// 		current.setValue("state","Approved");
-// 	}
-// 	else if(level==="LeaderPM")
-// 	{
-// 		current.setValue("state","WaitingPMApprover");
-// 	}
-// 	//set value Waiting for Leader if "Leader Agree" check in workflow
-// }
-// else if(gs.hasRole("x_229611_dxc_docs.DXC PM"))
-// {
-// 	current.setValue("state","Approved");
-// 	//current.conditions=true;
-// }
+        <script><![CDATA[var currentRec = current.sys_id;
+/*
+var grJournalList=new GlideRecord("sys_journal_field");
+grJournalList.addQuery("element_id",currentRec);
+grJournalList.addQuery("element","conditions");
+grJournalList.addQuery("sys_created_by",gs.getUserName());
+grJournalList.query();
+*/
+var grJournalList = new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetRecord();
+var answer= grJournalList.GetFirstRecord('sys_journal_field',["element_id","element","sys_created_by"],[currentRec,"conditions",gs.getUserName()]);
 
-	var currentRec = current.sys_id;
-	var grJournalList=new GlideRecord("sys_journal_field");
-	grJournalList.addQuery("element_id",currentRec);
-	grJournalList.addQuery("element","conditions");
-	grJournalList.addQuery("sys_created_by",gs.getUserName());
-	grJournalList.query();
-	var checkAWC=current.getValue("approved_with_condition");
-	if(grJournalList.next()||checkAWC==1)
-	{
-		current.setValue("state","ApprovedWCondition");
-		current.setValue("approved_with_condition",0);
+var checkAWC=current.getValue("approved_with_condition");
+if(answer!=null||checkAWC==1)
+{
+	current.setValue("state","ApprovedWCondition");
+	current.setValue("approved_with_condition",0);
+}
+else
+{
+	gs.info("In 1 "+currentRec);
+	var gr = new GlideRecord('sysapproval_approver');
+	gr.addQuery('document_id',currentRec);
+	gr.addQuery('state', 'requested');
+	gr.addQuery("approver",gs.getUserID());
+	gr.query();
+	while (gr.next()) {
+		gs.info("sys_id "+gr.sys_id);
+		gs.info("state "+gr.state);
+		gr.state = 'approved';
+		gr.update();
 	}
-	else
-	{
-		gs.info("In 1 "+currentRec);
-		var gr = new GlideRecord('sysapproval_approver');	
-		gr.addQuery('document_id',currentRec);		
-		gr.addQuery('state', 'requested');		
-		gr.query();	
-		while (gr.next()) {		
-			gs.info("sys_id "+gr.sys_id);
-			gs.info("state "+gr.state);
-			gr.state = 'approved';		
-			gr.update();	
-		}
-	}
-	gs.info("Value Condition :"+current.getValue("conditions"));
+}
+gs.info("Value Condition :"+current.getValue("conditions"));
 action.setRedirectURL(current);
 current.update();
 if (! current.isActionAborted())
@@ -84,7 +71,7 @@ if (! current.isActionAborted())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a25bea34ffa5300f76d045e9310c728</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -92,7 +79,7 @@ if (! current.isActionAborted())
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_3a25bea34ffa5300f76d045e9310c728</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 02:37:24</sys_updated_on>
+        <sys_updated_on>2018-07-16 06:34:33</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

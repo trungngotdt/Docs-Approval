@@ -27,7 +27,8 @@
 gs.info("In 1 "+currentRec);
 var gr = new GlideRecord('sysapproval_approver');	
 gr.addQuery('document_id',currentRec);		
-gr.addQuery('state', 'requested');		
+gr.addQuery('state', 'requested');
+gr.addQuery("approver",gs.getUserID());
 gr.query();	
 while (gr.next()) {		
 	gs.info("sys_id "+gr.sys_id);
@@ -49,7 +50,7 @@ if (! current.isActionAborted())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f42ffc04f931300f76d045e9310c77f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -57,7 +58,7 @@ if (! current.isActionAborted())
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_ui_action_5f42ffc04f931300f76d045e9310c77f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 02:37:18</sys_updated_on>
+        <sys_updated_on>2018-07-16 06:35:27</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
