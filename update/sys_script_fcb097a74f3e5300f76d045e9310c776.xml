@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>DXC_CreateNewDXCRequest_SetValueLBU&amp;GBP</name>
+        <name>DXC_CreateNewDXCRequest_SetValueLBU&amp;ER&amp;L</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -34,28 +34,17 @@
 	
 	var namecountry=current.submitted_by.location.country;
 	var gr = new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetRecord();
-	var lbuquery=gr.GetFirstRecord("x_229611_dxc_docs_local_business_unit",["country.name"],[namecountry]);
-	
-	/*var lbuquery=new GlideRecord("x_229611_dxc_docs_local_business_unit");	
-	lbuquery.addQuery("country.name",namecountry);	
-	lbuquery.query();
-	lbuquery.next();*/
+	var lbuquery=gr.GetFirstRecord("x_229611_dxc_docs_local_business_unit",["country.name"],[namecountry]);	
+	current.lbu=lbuquery.sys_id;
+	current.local_currency=current.lbu.default_currency.sys_id;
 	
 	var rate=gs.getProperty("x_229611_dxc_docs.DXC_ApprovalRequest_Rate");
 	
-	//current.setValue("lbu",lbuquery.sys_id);
-	//current.setValue("local_currency",current.lbu.default_currency.sys_id);
-	current.lbu=lbuquery.sys_id;
-	current.local_currency=current.lbu.default_currency.sys_id;
-	/*var lcurrency=new GlideRecord("fx_rate");
-	lcurrency.addQuery("currency",current.local_currency);
-	lcurrency.query();*/
+	
+	
 	var lcurrency=gr.GetFirstRecord("fx_rate",["currency"],[current.local_currency]);
-	//current.setValue("exchange_rate",lcurrency.next()?lcurrency.rate:0);
 	current.exchange_rate=lcurrency!=null?lcurrency.rate:0;
-	//gs.info(current.);
-	//current.setValue("gbp",current.exchange_rate*parseFloat(rate.toString()));
-	current.gbp=current.exchange_rate*parseFloat(rate.toString());
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -63,15 +52,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcb097a74f3e5300f76d045e9310c776</sys_id>
-        <sys_mod_count>49</sys_mod_count>
-        <sys_name>DXC_CreateNewDXCRequest_SetValueLBU&amp;GBP</sys_name>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name>DXC_CreateNewDXCRequest_SetValueLBU&amp;ER&amp;L</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_fcb097a74f3e5300f76d045e9310c776</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-15 10:29:05</sys_updated_on>
+        <sys_updated_on>2018-07-17 08:03:33</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
