@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
@@ -14,6 +14,8 @@
    if (isLoading) {
       return;
    }	
+	g_form.setValue("gbp",0);
+	/*
 	var ajex=new GlideAjax("x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetProperty");
 	ajex.addParam("sysparm_name","GetProperty");
 	ajex.addParam("sysparm_nameOfProperty","x_229611_dxc_docs.DXC_ApprovalRequest_Rate");
@@ -23,7 +25,7 @@
 		var rate = response.responseXML.documentElement.getAttribute("answer");
 		g_form.setValue("gbp", parseFloat(value)*parseFloat(rate.toString()));
 	}
-	
+	*/
    //Type appropriate comment here, and begin script below
    
 }]]></script>
@@ -33,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a08f26fc4fd31300f76d045e9310c758</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>[DA]UpdateGBP</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -41,7 +43,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_a08f26fc4fd31300f76d045e9310c758</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 06:33:29</sys_updated_on>
+        <sys_updated_on>2018-07-18 07:27:27</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
