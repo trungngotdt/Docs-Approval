@@ -11,7 +11,7 @@
         <name>DisableAttachments</name>
         <order/>
         <script><![CDATA[function onLoad() {
-	alert(g_form.getValue(""));
+	
 	var check=g_form.getValue("state").toString()==="Draft"||g_form.getValue("state").toString()==="New";
 	//alert("Check "+ check);
    //Type appropriate comment here, and begin script below
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>110a978e4fd35300f76d045e9310c71e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>DisableAttachments</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_110a978e4fd35300f76d045e9310c71e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-17 09:00:25</sys_updated_on>
+        <sys_updated_on>2018-07-18 01:20:11</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

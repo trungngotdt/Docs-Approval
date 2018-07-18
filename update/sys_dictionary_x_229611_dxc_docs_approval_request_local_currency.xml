@@ -18,7 +18,8 @@
         <column_label>Local Currency</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>&#13;
+</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -55,14 +56,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-28 04:07:12</sys_created_on>
         <sys_id>002c21544f4f1300f76d045e9310c717</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Local Currency</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_local_currency</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-28 04:07:12</sys_updated_on>
+        <sys_updated_on>2018-07-18 02:26:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

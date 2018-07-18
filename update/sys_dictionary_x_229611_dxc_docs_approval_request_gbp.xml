@@ -4,7 +4,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>scale=20</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -18,7 +18,36 @@
         <column_label>GBP</column_label>
         <comments/>
         <create_roles/>
-        <default_value>0</default_value>
+        <default_value>javascript:&#13;
+&#13;
+var gr = new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetRecord();&#13;
+	var namecountry=current.submitted_by.location.country;&#13;
+	var lbuquery=gr.GetFirstRecord("x_229611_dxc_docs_local_business_unit",["country.name"],[namecountry]);&#13;
+	var code=lbuquery.default_currency.code+"_GBP";&#13;
+	var count=0;&#13;
+var maxLoop=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_NumberOfRetry");&#13;
+var time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry");&#13;
+	while(count&lt;maxLoop)&#13;
+		{&#13;
+		var callApi=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetAPIConverter();&#13;
+		var result=callApi.GetResultConvert(code);&#13;
+		if(result!=null)&#13;
+			{&#13;
+gs.addInfoMessage(parseFloat(result)); &#13;
+			gs.info(result);&#13;
+			current.gbp=result.toString();&#13;
+			break;&#13;
+		}&#13;
+		var goSleep=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GoToSleep();&#13;
+		goSleep.Sleep(time);&#13;
+		gs.addErrorMessage("Can't load");&#13;
+		count++;&#13;
+		&#13;
+	}&#13;
+if(count==maxLoop)&#13;
+{&#13;
+current.gbp="";&#13;
+}</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -35,7 +64,7 @@
         <function_field>false</function_field>
         <internal_type display_value="Decimal">decimal</internal_type>
         <mandatory>true</mandatory>
-        <max_length>20</max_length>
+        <max_length>21</max_length>
         <name>x_229611_dxc_docs_approval_request</name>
         <next_element/>
         <primary>false</primary>
@@ -55,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 04:25:23</sys_created_on>
         <sys_id>afc35a1b4f725300f76d045e9310c789</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>GBP</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_gbp</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-04 03:08:16</sys_updated_on>
+        <sys_updated_on>2018-07-18 06:26:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
