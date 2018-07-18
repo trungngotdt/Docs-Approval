@@ -5,29 +5,81 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field>exchange_rate</field>
+        <field>local_currency</field>
         <global>true</global>
         <messages/>
         <name>[DA]UpdateGBP</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading) {
-      return;
-   }	
-	g_form.setValue("gbp",0);
-	/*
-	var ajex=new GlideAjax("x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetProperty");
-	ajex.addParam("sysparm_name","GetProperty");
-	ajex.addParam("sysparm_nameOfProperty","x_229611_dxc_docs.DXC_ApprovalRequest_Rate");
-	ajex.getXML(SetValue);
-	function SetValue(response) {     
-		var value=newValue===""?oldValue.toString():newValue.toString();
-		var rate = response.responseXML.documentElement.getAttribute("answer");
-		g_form.setValue("gbp", parseFloat(value)*parseFloat(rate.toString()));
-	}
+	if (isLoading) {
+		return;
+	}	
+	
+	/*var maxLoop=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_NumberOfRetry");
+	var time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry");
+	var code=g_form.getDisplayBox('local_currency').value;
 	*/
-   //Type appropriate comment here, and begin script below
-   
+	function getResult(response)
+	{
+		var result=response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue("gbp",result);		
+	}
+	
+	function goToSleep(response)
+	{
+		var result=response.responseXML.documentElement.getAttribute("answer");
+	}
+	
+	var count=0;
+	while(count<maxLoop)
+	{		
+		var callAPIAjax=new GlideAjax("x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetAPIConverterAjax");
+		callAPIAjax.addParam("sysparm_name","GetResultConvert");
+		callAPIAjax.addParam("sysparm_code",code);
+		callAPIAjax.getXML(getResult);
+		var result=g_form.getValue("gbp");
+		if(result!=null)
+		{
+			break;
+		}
+		var gSleep=new GlideAjax("x_229611_dxc_docs.DXC_CreateNewDXCRequest_GoToSleepAjax");
+		
+		gSleep.addParam("sysparm_name","Sleep");
+		gSleep.addParam("sysparm_time",time);
+		gSleep.getXML(goToSleep);
+		count++;
+	}
+	
+	
+	
+	//g_form.addInfoMessage(g_form.getDisplayBox('local_currency').value);
+	/*
+	var code=g_form.getDisplayBox('local_currency').value+"_GBP";
+	var count=0;
+	var maxLoop=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_NumberOfRetry");
+	var time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry");
+	while(count<maxLoop)
+		{
+		var callApi=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetAPIConverter();
+		var result=callApi.GetResultConvert(code);
+		if(result!=null)
+			{
+			gs.addInfoMessage(parseFloat(result));
+			gs.info(result);
+			current.gbp=result.toString();
+			break;
+		}
+		var goSleep=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GoToSleep();
+		goSleep.Sleep(time);
+		gs.addErrorMessage("Can't load");
+		count++;
+	}
+	if(count==maxLoop)
+		{
+		current.gbp="";
+	}
+	//Type appropriate comment here, and begin script below
+ 	*/
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -35,7 +87,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a08f26fc4fd31300f76d045e9310c758</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>[DA]UpdateGBP</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -43,7 +95,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_a08f26fc4fd31300f76d045e9310c758</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 07:27:27</sys_updated_on>
+        <sys_updated_on>2018-07-18 08:53:50</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
