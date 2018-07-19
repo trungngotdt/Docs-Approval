@@ -8,7 +8,7 @@
         <description/>
         <name>DXC_CreateNewDXCRequest_CheckURL</name>
         <script><![CDATA[var DXC_CreateNewDXCRequest_CheckURL = Class.create();
-DXC_CreateNewDXCRequest_GetAPIConverterAjax.prototype =
+DXC_CreateNewDXCRequest_CheckURL.prototype =
 Object.extendsObject(global.AbstractAjaxProcessor, {
 	
 	IsURLExists:function()
@@ -19,13 +19,13 @@ Object.extendsObject(global.AbstractAjaxProcessor, {
 			var request= new sn_ws.RESTMessageV2();
 			request.setEndpoint(URL);
 			request.setHttpMethod("get");
-			var response = request.executeAsync();
+			var response = request.execute();
 			var status = response.getStatusCode();
 			return status;
 		}
 		catch(ex)
 		{
-			gs.info( ex);
+			gs.info("DXC_CreateNewDXCRequest_CheckURL"+ ex);
 			return null;
 		}
 		/*
@@ -57,13 +57,13 @@ Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-15 03:58:03</sys_created_on>
         <sys_id>b45d01b14f971300f76d045e9310c752</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>DXC_CreateNewDXCRequest_CheckURL</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_include_b45d01b14f971300f76d045e9310c752</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 03:06:40</sys_updated_on>
+        <sys_updated_on>2018-07-19 05:43:24</sys_updated_on>
     </sys_script_include>
 </record_update>
