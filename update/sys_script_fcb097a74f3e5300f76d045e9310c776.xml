@@ -37,21 +37,10 @@
 	var lbuquery=gr.GetFirstRecord("x_229611_dxc_docs_local_business_unit",["country.name"],[namecountry]);	
 	current.lbu=lbuquery.sys_id;
 	current.local_currency=lbuquery.default_currency;
-	
-	//var rate=gs.getProperty("x_229611_dxc_docs.DXC_ApprovalRequest_Rate");
-		
-	
+			
 	var lcurrency=gr.GetFirstRecord("fx_rate",["currency"],[current.local_currency]);
 	current.exchange_rate=lcurrency!=null?lcurrency.rate:0;
-	/*gs.addInfoMessage("currency "+current.local_currency.code);
-	var request= new sn_ws.RESTMessageV2("check","get");
-	var code=current.local_currency.code+"_GBP";
-			request.setStringParameter("currency",code);
-			var reponse=request.execute();
-			var status = reponse.getStatusCode();
-			var body=reponse.getBody();
-	current.gbp=JSON.parse(body).THB_USD.val;
-			gs.info("JSON "+ );*/
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -59,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcb097a74f3e5300f76d045e9310c776</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>DXC_CreateNewDXCRequest_SetValueLBU&amp;ER&amp;L</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -67,7 +56,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_fcb097a74f3e5300f76d045e9310c776</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 06:19:35</sys_updated_on>
+        <sys_updated_on>2018-07-19 14:38:20</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
