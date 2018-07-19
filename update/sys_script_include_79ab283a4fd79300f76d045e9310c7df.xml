@@ -21,6 +21,7 @@ DXC_CreateNewDXCRequest_GoToSleep.prototype = {
 			t2 = new GlideDateTime().getNumericValue();
 			duration = t2 - t1;
 		}
+		return true;
 	},
 	type: 'DXC_CreateNewDXCRequest_GoToSleep'
 };]]></script>
@@ -28,13 +29,13 @@ DXC_CreateNewDXCRequest_GoToSleep.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-18 04:04:33</sys_created_on>
         <sys_id>79ab283a4fd79300f76d045e9310c7df</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>DXC_CreateNewDXCRequest_GoToSleep</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_include_79ab283a4fd79300f76d045e9310c7df</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 04:56:18</sys_updated_on>
+        <sys_updated_on>2018-07-18 14:51:40</sys_updated_on>
     </sys_script_include>
 </record_update>

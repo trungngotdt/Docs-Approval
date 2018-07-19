@@ -33,8 +33,6 @@ var time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry")
 		var result=callApi.GetResultConvert(code);&#13;
 		if(result!=null)&#13;
 			{&#13;
-gs.addInfoMessage(parseFloat(result)); &#13;
-			gs.info(result);&#13;
 			current.gbp=result.toString();&#13;
 			break;&#13;
 		}&#13;
@@ -84,14 +82,14 @@ current.gbp="";&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-25 04:25:23</sys_created_on>
         <sys_id>afc35a1b4f725300f76d045e9310c789</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>GBP</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_dictionary_x_229611_dxc_docs_approval_request_gbp</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 06:26:21</sys_updated_on>
+        <sys_updated_on>2018-07-18 14:34:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

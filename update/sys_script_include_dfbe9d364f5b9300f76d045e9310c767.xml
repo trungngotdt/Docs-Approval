@@ -11,37 +11,53 @@
 DXC_CreateNewDXCRequest_GetAPIConverterAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	GetResultConvert:function()
 	{
-		try
+		var count=0;
+		var code=this.getParameter("sysparm_code");
+		var maxLoop=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_NumberOfRetry");
+		var time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry");
+		while(count<maxLoop)
 		{
-			var code=this.getParameter("sysparm_code");
-			var request= new sn_ws.RESTMessageV2("CallAPICoverterCurrency","get");
-			//var code=lbuquery.default_currency.code+"_GBP";
-			request.setStringParameter("currency",code);
-			var reponse=request.execute();
-			var status = reponse.getStatusCode();
-			var body=reponse.getBody();
-			var price=JSON.parse(body)[code].val;
-			return (price!=null && typeof price !== 'undefined')?price:null;
+			try
+			{				
+				var request= new sn_ws.RESTMessageV2("CallAPICoverterCurrency","get");
+				
+				request.setStringParameter("currency",code);
+				var reponse=request.execute();
+				var status = reponse.getStatusCode();
+				if(status>300)
+				{
+					throw "Error";
+				}
+				var body=reponse.getBody();
+				var price=JSON.parse(body)[code].val;
+				return (price!=null && typeof price !== 'undefined')?price.toString():null;
+			}
+			catch(ex)
+			{
+				gs.info("DXC_CreateNewDXCRequest_GetAPIConverterAjax Exception "+ex);
+				//gs.info(ex.getMessage());
+				//return null;
+			}
+			
+			var goSleep=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GoToSleep();
+			goSleep.Sleep(time);
+			count++;
 		}
-		catch(ex)
-		{
-			//gs.info(ex.getMessage());
-			return null;
-		}		
+		return null;
 	},
-    type: 'DXC_CreateNewDXCRequest_GetAPIConverterAjax'
+	type: 'DXC_CreateNewDXCRequest_GetAPIConverterAjax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-18 07:46:42</sys_created_on>
         <sys_id>dfbe9d364f5b9300f76d045e9310c767</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>DXC_CreateNewDXCRequest_GetAPIConverterAjax</sys_name>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_include_dfbe9d364f5b9300f76d045e9310c767</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 07:48:17</sys_updated_on>
+        <sys_updated_on>2018-07-19 01:31:12</sys_updated_on>
     </sys_script_include>
 </record_update>

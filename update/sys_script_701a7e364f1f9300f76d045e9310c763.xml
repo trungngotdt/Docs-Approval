@@ -4,10 +4,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>true</action_update>
-        <active>false</active>
+        <action_update>false</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>DXC_CreateNewDXCRequest_ValidateData</name>
+        <name>DXC_CreateNewDXCRequest_SendProperty</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,47 +29,29 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var gr = new x_229611_dxc_docs.DXC_CreateNewDXCRequest_GetRecord();
-	var answer= gr.GetFirstRecord('sys_attachment',["table_sys_id"],[current.sys_id]);
-	
-	
-	if(answer==null)
-	{	
-		var check=new x_229611_dxc_docs.DXC_CreateNewDXCRequest_CheckURL();
-		var status= check.IsURLExists(current.dxc_web_link);
-		gs.info("Status :"+status);
-		if(!status)
-		{
-			gs.addErrorMessage("Check attachments or URL");
-			current.setAbortAction(true);
-		}
-	}
-	var checkData=current.dxc_title&&current.number&&current.state&&current.sub_category&&current.gbp&&current.next_approver&&current.local_currency&&current.exchange_rate&&current.lbu;
-	if(!checkData)
-	{
-		current.setAbortAction(true);
-	}
-	
+
+	g_scratchpad.maxLoop=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_NumberOfRetry");
+	g_scratchpad.time=gs.getProperty("x_229611_dxc_docs.DXC_CreateNewDXCRequest_TimeOfRetry");
 	// Add your code here
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-27 04:30:40</sys_created_on>
+        <sys_created_on>2018-07-18 14:28:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>af96a0404f831300f76d045e9310c791</sys_id>
-        <sys_mod_count>36</sys_mod_count>
-        <sys_name>DXC_CreateNewDXCRequest_ValidateData</sys_name>
+        <sys_id>701a7e364f1f9300f76d045e9310c763</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DXC_CreateNewDXCRequest_SendProperty</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
-        <sys_update_name>sys_script_af96a0404f831300f76d045e9310c791</sys_update_name>
+        <sys_update_name>sys_script_701a7e364f1f9300f76d045e9310c763</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 01:55:46</sys_updated_on>
+        <sys_updated_on>2018-07-18 14:30:01</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>before_display</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=af96a0404f831300f76d045e9310c791"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=701a7e364f1f9300f76d045e9310c763"/>
 </record_update>
