@@ -23,6 +23,7 @@
 	{
 		var result=response.responseXML.documentElement.getAttribute("answer");
 		g_form.addInfoMessage(result);
+		g_form.setValue("dxc_web_link","");
 	}
    //Type appropriate comment here, and begin script below
    
@@ -33,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5ef7a1034f93d300f76d045e9310c72a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CheckURL</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -41,7 +42,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_5ef7a1034f93d300f76d045e9310c72a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 03:53:53</sys_updated_on>
+        <sys_updated_on>2018-07-19 04:07:41</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
