@@ -10,17 +10,16 @@
         <messages/>
         <name>DisableAttachments</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-	//jQuery("a.attachment:contains('[rename]')").hide();
-	var check=g_form.getValue("state").toString()==="Draft"||g_form.getValue("state").toString()==="New";
+        <script><![CDATA[function onLoad() {	
+	var check=g_form.getValue("state").toString()==="Draft"||g_form.getValue("state").toString()==="New"||g_form.getValue("state").toString()==="ApprovedWCondition";
 	//alert("Check "+ check);
    //Type appropriate comment here, and begin script below
    if(!check)
 	{
 		//alert("in");
-		jQuery("a.attachment:contains('[rename]')").hide();
-		g_form.disableAttachments();
 		
+		g_form.disableAttachments();
+		jQuery("a.attachment:contains('[rename]')").hide();
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -29,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>110a978e4fd35300f76d045e9310c71e</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>DisableAttachments</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Docs Approval" source="x_229611_dxc_docs">5c7b711b4f325300f76d045e9310c7db</sys_package>
@@ -37,7 +36,7 @@
         <sys_scope display_value="DXC Docs Approval">5c7b711b4f325300f76d045e9310c7db</sys_scope>
         <sys_update_name>sys_script_client_110a978e4fd35300f76d045e9310c71e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 15:49:36</sys_updated_on>
+        <sys_updated_on>2018-07-20 01:11:18</sys_updated_on>
         <table>x_229611_dxc_docs_approval_request</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
